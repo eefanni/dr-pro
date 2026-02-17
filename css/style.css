@@ -1,6 +1,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #fdfdfd;
+
 }
 
 .textcolormain{
@@ -26,11 +27,13 @@ body{
     background-color: #fd556d;
     color: white;
     border: 2px solid #fd556d;
+    transition: .2s;
 }
 .buttonstyle.secondary:hover{
     background-color: transparent;
     color: #fd556d;
     border: 2px solid #fd556d;
+    transition: .2s;
 }
 .buttonstyle.main{
     background-color: #56cac1;
@@ -181,6 +184,7 @@ body{
 .banner-section{
     height: 100vh;
     width: 100%;
+    margin-bottom: 80px;
 }
 .banner-section .bannertext{
     position: absolute;
@@ -208,24 +212,97 @@ body{
     font-weight: 600;
 }
 .banner-section .appointment{
-
     color: #56cac1;
     background-color: transparent;
+    border: 2px solid #56cac1;
+    transition: .2s;
+}
+.banner-section .appointment:hover{
+    color: white;
+    background-color: #56cac1;
+    border: 2px solid #56cac1;
+    transition: .2s;
 }
 
 
+.welcome-section .custom-container{
+    min-height: 500px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.welcome-section .introduction{
+    padding-right: 60px;
+}
+.welcome-section .introduction .light{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(97, 97, 97, 0.37);
+    margin-bottom: 10px;
+}
+.welcome-section .introduction h2{
+    font-size: 45px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 40px;
+}
+.welcome-section .introduction .description{
+    font-size: 15px;
+    color: rgba(63, 63, 63, 0.83);
+    line-height: 1.75;
+    margin-bottom: 60px;
+}
+.welcome-section .content{
+    display: block;
+    @media (min-width: 560px){
+        display: flex;
+    }
+}
+.welcome-section .introduction .colored{
+    color: #56cac1;
+    font-weight: 800;
+    font-size: 30px;
+}
+.welcome-section .introduction .text{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    margin-bottom: 30px;
+
+}
 .welcome-section .appointment .title{
     background-color: #56cac1;
     color: white;
     width: 50%;
-    height: 50px;
+    height: 70px;
+    line-height: 70px;
     font-weight: 600;
     font-size: 23px;
     text-align: center;
-    line-height: 50px;
 }
 .welcome-section input{
     height: 50px;
-    width: 90%;
-    margin: 10px 0px;
+
+
+    background-color: transparent;
+    border: 2px solid rgba(170, 170, 170, 0.27);
+    border-radius: 0;
+}
+.welcome-section input:hover{
+    border: 2px solid #56cac1;
+    transition: .2s;
+}
+.welcome-section input::placeholder{
+    color: rgba(119, 119, 119, 0.72);
+    font-size: 15px;
+
+}
+.welcome-section input:focus{
+    background-color: transparent;
+    outline: 0;
+    box-shadow: unset;
+    border: 2px solid #56cac1;
+}
+.welcome-section button{
+    width: 100%;
+
 }
