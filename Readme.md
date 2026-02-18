@@ -1,8 +1,7 @@
-Save code:
-git add .
-git commit -m "message"
-git push -u origin master
+# Save code:
+- git add .
+- git commit -m "message"
+- git push -u origin master
 
-
-Get code:
-git pull
+# Get code:
+- git pull
