@@ -1,21 +1,30 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
     background-color: #fdfdfd;
 
 }
 
-.textcolormain{
+.textcolormain {
     color: #56cac1;
 }
-.secondarycolor{
+
+.secondarycolor {
     color: #fd556d;
     background-color: #fd556d;
     color: #fb546c;
     color: #404040;
 }
 
+a {
+    text-decoration: none;
+    color: #404040;
+}
 
-.buttonstyle{
+a:hover {
+    color: #56cac1;
+}
+
+.buttonstyle {
     border-radius: 20px;
     text-transform: uppercase;
     height: 40px;
@@ -23,29 +32,33 @@ body{
     font-size: 14px;
     padding: 10px 35px;
 }
-.buttonstyle.secondary{
+
+.buttonstyle.secondary {
     background-color: #fd556d;
     color: white;
     border: 2px solid #fd556d;
     transition: .2s;
 }
-.buttonstyle.secondary:hover{
+
+.buttonstyle.secondary:hover {
     background-color: transparent;
     color: #fd556d;
     border: 2px solid #fd556d;
     transition: .2s;
 }
-.buttonstyle.main{
+
+.buttonstyle.main {
     background-color: #56cac1;
     color: white;
     border: 2px solid #56cac1;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     font-weight: 700;
 }
-.logo .subtext{
+
+.logo .subtext {
     font-size: 12px;
     font-weight: 400;
     line-height: 0.75;
@@ -53,7 +66,7 @@ body{
 }
 
 
-.navbar-section{
+.navbar-section {
     height: 80px;
     background-color: white;
     display: flex;
@@ -61,50 +74,63 @@ body{
     width: 100%;
     padding: 0px 50px;
 }
-.navbar-section .navigations div{
+
+.navbar-section .navigations div {
     margin: 0px 20px;
     font-weight: 600;
     font-size: 15px;
 }
-.navbar-section .navigations div:hover{
+
+.navbar-section .navigations div:hover {
     cursor: pointer;
     color: #56cac1;
 }
+
 .navbar-section .navigations {
     display: flex;
+
     @media (max-width: 1000px) {
         display: none;
     }
 }
+
 .navbar-section .icons {
     display: flex;
+
     @media (max-width: 1000px) {
         display: none;
     }
 }
-.navbar-section .openinghours{
+
+.navbar-section .openinghours {
     height: 40px;
     font-weight: 600;
     font-size: 14px;
     padding: 10px 35px;
     display: block;
-    @media (max-width: 1650px){
+
+    @media (max-width: 1650px) {
         display: none !important;
     }
 }
-.navbar-section .telephonenumber{
+
+.navbar-section .telephonenumber {
     display: none;
-    @media (min-width: 1400px){
+
+    @media (min-width: 1400px) {
         display: block;
     }
 }
-.navbar-section .secondary{
+
+.navbar-section .secondary {
     display: none;
-    @media (min-width: 1200px){
+
+    @media (min-width: 1200px) {
         display: block;
     }
 }
-.navbar-section .icons i{
+
+.navbar-section .icons i {
     font-size: 13px;
     color: #3f3f3f;
     background-color: rgb(228, 233, 239);
@@ -115,7 +141,8 @@ body{
     margin: 0px 7px;
     transition: .1s;
 }
-.navbar-section .icons i:hover{
+
+.navbar-section .icons i:hover {
     background-color: #56cac1;
     color: white;
     cursor: pointer;
@@ -123,31 +150,33 @@ body{
 }
 
 
-.sidenav-bg{
+.sidenav-bg {
     width: 100%;
     height: 100vh;
     background: rgba(248, 247, 247, 0.5);
     z-index: 101;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: none;
 }
-.sidenav{
+
+.sidenav {
     width: 100%;
     max-width: 350px;
     position: fixed;
-    top:50%;
-    right:10px;
+    top: 50%;
+    right: 10px;
     height: calc(100vh);
     background: #56cac1;
     color: white;
     z-index: 102;
     padding: 30px;
-    transform: translate(120%,-50%);
+    transform: translate(120%, -50%);
     transition: .25s;
 }
-.sidenav .icons i{
+
+.sidenav .icons i {
     font-size: 13px;
     color: #3f3f3f;
     background-color: rgb(228, 233, 239);
@@ -158,35 +187,40 @@ body{
     margin: 0px 7px;
     transition: .1s;
 }
-.sidenav .icons i:hover{
+
+.sidenav .icons i:hover {
     background-color: #3f3f3f;
     color: white;
     cursor: pointer;
     transition: .1s;
 }
-.sidenav .navigations{
+
+.sidenav .navigations {
     font-size: 25px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.72);
     transition: .1s;
 }
-.sidenav .navigations div:hover{
-    cursor: pointer;
-    color: #1f7a73;
-    transition: .1s;
-}
-.sidenav .darken:hover{
+
+.sidenav .navigations div:hover {
     cursor: pointer;
     color: #1f7a73;
     transition: .1s;
 }
 
-.banner-section{
+.sidenav .darken:hover {
+    cursor: pointer;
+    color: #1f7a73;
+    transition: .1s;
+}
+
+.banner-section {
     height: 100vh;
     width: 100%;
     margin-bottom: 80px;
 }
-.banner-section .bannertext{
+
+.banner-section .bannertext {
     position: absolute;
     top: 0;
     left: 0;
@@ -197,27 +231,32 @@ body{
     align-items: center;
     margin: 50px 80px;
 }
-.banner-section .image{
+
+.banner-section .image {
     height: 100vh;
     object-fit: cover;
     object-position: 50% 0%;
     width: 100%;
 }
-.banner-section .title{
+
+.banner-section .title {
     font-size: 50px;
     color: #3f3f3f;
 }
-.bannertext .textcolormain{
+
+.bannertext .textcolormain {
     font-size: 25px;
     font-weight: 600;
 }
-.banner-section .appointment{
+
+.banner-section .appointment {
     color: #56cac1;
     background-color: transparent;
     border: 2px solid #56cac1;
     transition: .2s;
 }
-.banner-section .appointment:hover{
+
+.banner-section .appointment:hover {
     color: white;
     background-color: #56cac1;
     border: 2px solid #56cac1;
@@ -225,51 +264,60 @@ body{
 }
 
 
-.welcome-section .custom-container{
+.welcome-section .custom-container {
     min-height: 500px;
     max-width: 1200px;
     margin: auto;
 
 }
-.welcome-section .introduction{
+
+.welcome-section .introduction {
     padding-right: 60px;
 }
-.welcome-section .introduction .light{
+
+.welcome-section .introduction .light {
     font-size: 18px;
     font-weight: 600;
     color: rgba(97, 97, 97, 0.37);
     margin-bottom: 10px;
 }
-.welcome-section .introduction h2{
+
+.welcome-section .introduction h2 {
     font-size: 45px;
     color: rgb(63, 63, 63);
     margin-bottom: 40px;
 }
-.welcome-section .introduction .description{
+
+.welcome-section .introduction .description {
     font-size: 15px;
     color: rgba(63, 63, 63, 0.83);
     line-height: 1.75;
     margin-bottom: 60px;
 }
-.welcome-section .content{
+
+.welcome-section .content {
     display: block;
-    @media (min-width: 560px){
+
+    @media (min-width: 560px) {
         display: flex;
     }
 }
-.welcome-section .introduction .colored{
+
+.welcome-section .introduction .colored {
     color: #56cac1;
     font-weight: 800;
     font-size: 30px;
 }
-.welcome-section .introduction .text{
+
+.welcome-section .introduction .text {
     font-size: 19px;
     font-weight: 600;
     color: rgb(63, 63, 63);
     margin-bottom: 30px;
 
 }
-.welcome-section .appointment .title{
+
+.welcome-section .appointment .title {
     background-color: #56cac1;
     color: white;
     width: 50%;
@@ -279,7 +327,8 @@ body{
     font-size: 23px;
     text-align: center;
 }
-.welcome-section input{
+
+.welcome-section input {
     height: 50px;
 
 
@@ -287,22 +336,26 @@ body{
     border: 2px solid rgba(170, 170, 170, 0.27);
     border-radius: 0;
 }
-.welcome-section input:hover{
+
+.welcome-section input:hover {
     border: 2px solid #56cac1;
     transition: .2s;
 }
-.welcome-section input::placeholder{
+
+.welcome-section input::placeholder {
     color: rgba(119, 119, 119, 0.72);
     font-size: 15px;
 
 }
-.welcome-section input:focus{
+
+.welcome-section input:focus {
     background-color: transparent;
     outline: 0;
     box-shadow: unset;
     border: 2px solid #56cac1;
 }
-.welcome-section button{
+
+.welcome-section button {
     width: 100%;
 
 }
