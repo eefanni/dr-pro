@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #fdfdfd;
+    padding-top: 80px;
 }
 
 .textcolormain {
@@ -229,7 +230,8 @@ h2 {
 
 
 .banner-section {
-    height: 100vh;
+    height: 70vh;
+    min-height: 550px;
     width: 100%;
     margin-bottom: 80px;
 }
@@ -239,14 +241,15 @@ h2 {
     left: 0;
     height: 100%;
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 150px;
 }
 .banner-section .image {
-    height: 100vh;
+    height: 70vh;
+    min-height: 550px;
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 60% 0%;
     width: 100%;
 }
 .banner-section .title {
@@ -350,11 +353,10 @@ h2 {
     background-color: #edf0f5;
 }
 .features-section .image-main{
-    width: inherit;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .features-section .order-1{
     order: 1;
@@ -372,6 +374,8 @@ h2 {
     position: relative;
     height: 65px;
     width: 65px;
+    min-height: 65px;
+    min-width: 65px;
     margin-right: 20px;
     background-color: #6ad9d0;
     border-radius: 100%;
@@ -392,4 +396,32 @@ h2 {
     font-size: 15px;
     color: rgba(63, 63, 63, 0.83);
     line-height: 1.75;
+}
+
+.appointment-section{
+    background-color: #fb546c;
+    color: white;
+}
+.appointment-section .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 40px 60px;
+    @media (max-width: 1000px) {
+        display: block;
+    }
+}
+.appointment-section .title{
+    font-size: 35px;
+    font-weight: 600;
+}
+.appointment-section .telephonenumber{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ec475f;
+    padding: 15px;
+    max-width: 300px;
 }
