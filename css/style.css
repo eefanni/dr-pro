@@ -78,7 +78,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-
+/* --- navbar-section ----------------------------------------------------------------------------------------- */
 
 .navbar-section {
     height: 80px;
@@ -167,6 +167,7 @@ h2 {
     transition: .1s;
 }
 
+/* --- sidenav-section ------------------------------------------------------------------------------------ */
 
 .sidenav-bg {
     width: 100%;
@@ -233,13 +234,14 @@ h2 {
     transition: .1s;
 }
 
-
+/* --- banner-section ---------------------------------------------------------------------------------------- */
 
 .banner-section {
     height: 70vh;
     min-height: 550px;
     width: 100%;
     margin-bottom: 80px;
+
 }
 
 .banner-section .bannertext {
@@ -251,6 +253,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .banner-section .image {
@@ -259,22 +262,39 @@ h2 {
     object-fit: cover;
     object-position: 60% 0%;
     width: 100%;
+    @media (max-width: 767px){
+        filter: brightness(0.6);
+    }
 }
 
 .banner-section .title {
     font-size: 50px;
     color: #3f3f3f;
+    @media (max-width: 767px){
+        color: white;
+    }
 }
 
 .bannertext .textcolormain {
     font-size: 25px;
     font-weight: 600;
+    @media (max-width: 767px){
+        color: #a9f4e8;
+    }
 }
 
 .banner-section .description {
     font-size: 15px;
     color: #616161;
     margin-bottom: 50px;
+    @media (max-width: 767px){
+        color: white;
+    }
+}
+.banner-section .secondary{
+    @media (max-width: 360px){
+        width: 100%;
+    }
 }
 
 .banner-section .appointment {
@@ -282,6 +302,14 @@ h2 {
     background-color: transparent;
     border: 2px solid #56cac1;
     transition: .2s;
+    @media (max-width: 767px){
+        color: #a9f4e8;
+        border: 2px solid #a9f4e8;
+    }
+    @media (max-width: 360px){
+        height: 80px!important;
+        width: 100%;
+    }
 }
 
 .banner-section .appointment:hover {
@@ -289,9 +317,15 @@ h2 {
     background-color: #56cac1;
     border: 2px solid #56cac1;
     transition: .2s;
+    @media (max-width: 767px){
+        background-color: #a9f4e8;
+        border: 2px solid #a9f4e8;
+        color: #56cac1;
+    }
+
 }
 
-
+/* --- welcome-section -------------------------------------------------------------------------------- */
 
 .welcome-section .custom-container {
     min-height: 500px;
@@ -369,14 +403,67 @@ h2 {
 
 .welcome-section button {
     width: 100%;
+    @media (max-width: 360px){
+        height: 80px!important;
+    }
 }
 
+<<<<<<< HEAD
 .section-subtitle {
+=======
+/* --- features-section ---------------------------------------------------------------------------------------------------------- */
+
+.features-section{
+    background-color: #edf0f5;
+}
+.features-section .image-main{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.features-section .order-1{
+    order: 1;
+}
+.features-section .order-2{
+    order: 2;
+}
+.features-section .description{
+    font-size: 15px;
+    color: rgba(63, 63, 63, 0.83);
+    line-height: 1.75;
+    margin-bottom: 60px;
+}
+.features-section .points .image{
+    position: relative;
+    height: 65px;
+    width: 65px;
+    min-height: 65px;
+    min-width: 65px;
+    margin-right: 20px;
+    background-color: #6ad9d0;
+    border-radius: 100%;
+}
+.features-section .points img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+}
+.features-section .points-title{
+>>>>>>> c4ea73dae71819e59e1f92852106e156aba5997b
     font-size: 18px;
     font-weight: 600;
     color: rgba(97, 97, 97, 0.37);
     margin-bottom: 10px;
 }
+.features-section .points div{
+    margin-bottom: 10px;
+}
+
+/* --- appointment-section ------------------------------------------------------------------------- */
 
 .h2-aboutus {
     font-size: 45px;
@@ -412,6 +499,7 @@ h2 {
         object-position: 50% 50%;
         >>>>>>>7ceb368cf20c53819a39ed9638fec2146e802047
     }
+<<<<<<< HEAD
 
     .features-section .order-1 {
         order: 1;
@@ -490,3 +578,57 @@ h2 {
         padding: 15px;
         max-width: 300px;
     }
+=======
+}
+.appointment-section .title{
+    font-size: 35px;
+    font-weight: 600;
+}
+.appointment-section .telephonenumber{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ec475f;
+    padding: 15px;
+    max-width: 300px;
+}
+
+/* --- services-section ---------------------------------------------------------------------------------------- */
+
+.services-section{
+    padding-top: 60px;
+    text-align: center;
+}
+.services-section .image{
+    position: relative;
+    height: 65px;
+    width: 65px;
+    min-height: 65px;
+    min-width: 65px;
+    background-color: #6ad9d0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.services-section img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+}
+.services-section .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #404040;
+    margin: 20px 0px;
+}
+.services-section .description{
+    color: #7c7c7c;
+    font-size: 16px;
+}
+>>>>>>> c4ea73dae71819e59e1f92852106e156aba5997b
