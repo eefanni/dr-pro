@@ -41,9 +41,9 @@
         <div class="ms-5 me-5 navigations">
             <div><a href="index.html">Home</a></div>
             <div><a href="Aboutus.html">About us</a></div>
-            <div>Services</div>
-            <div>News</div>
-            <div>Contact</div>
+            <div><a href="">Services</a></div>
+            <div><a href="">News</a></div>
+            <div><a href="">Contact</a></div>
         </div>
 
         <div class="d-flex">
@@ -60,18 +60,17 @@
             <i class="fa fa-bars" onclick="openSidenav();"></i>
         </div>
     </div>
-
     <div class="sidenav-bg" onclick="closeSidenav()"></div>
 
     <div class="sidenav d-flex justify-content-between flex-column">
         <div>
             <i class="darken fa fa-times" onclick="closeSidenav()"></i>
             <div class="navigations mb-5 mt-5">
-                <div class="d-block">Home</div>
-                <div class="d-block">About us</div>
-                <div class="d-block">Services</div>
-                <div class="d-block">News</div>
-                <div class="d-block">Contact</div>
+                <div><a href="index.html">Home</a></div>
+                <div><a href="Aboutus.html">About us</a></div>
+                <div><a href="">Services</a></div>
+                <div><a href="">News</a></div>
+                <div><a href="">Contact</a></div>
             </div>
             <div>Mo - Sat: 8:00am - 9:00pm</div>
             <div>+34 586 778 8892</div>
@@ -83,17 +82,17 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </div>
+
     <div class="banner-section">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="content">
                         <div>
-                            <img class="image" src="https://preview.colorlib.com/theme/drpro/images/about.jpg">
+                            <img class="image w-100" src="https://preview.colorlib.com/theme/drpro/images/about.jpg">
                         </div>
                         <div class="bannertext">
-                            <div class="textcolormain">#1 Plastic Surgery Clinic</div>
-                            <h2 class="title">About us</h2>
+                            <h2 class="title-aboutus">About us</h2>
                             <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                             <div class="home_overlay">
                                 <img src="https://preview.colorlib.com/theme/drpro/images/home_overlay.png" alt="">
@@ -104,7 +103,105 @@
             </div>
         </div>
     </div>
+    <div class="welcome-section">
+        <div class="custom-container container-fluid">
+            <div class="row">
+                <div class="introduction col-12 col-lg-6">
+                    <div class="light">This is Dr Pro</div>
+                    <h2 class="h2-aboutus">Welcome to our Clinic</h2>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+                        consectetur consequatur culpa delectus doloribus excepturi illo inventore iure, nihil quae,
+                        quasi ratione repellat sequi, sint voluptate. Architecto blanditiis debitis eaque illum incidunt
+                        ipsam iusto maxime nam, quia sapiente sed similique ullam veritatis? Aliquid corporis ex
+                        molestias nam nostrum, quo repudiandae!</div>
+                    <div class=" content justify-content-between mb-5">
+                        <div>
+                            <div class="colored">+5000</div>
+                            <div class="text">Satisfied Patients</div>
+                        </div>
+                        <div>
+                            <div class="colored">352</div>
+                            <div class="text">Face Liftings</div>
+                        </div>
+                        <div>
+                            <div class="colored">718</div>
+                            <div class="text">Injectibles</div>
+                        </div>
+                        <div>
+                            <div class="colored">3</div>
+                            <div class="text">Rewards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 appointment ">
+                    <div class="shadow-lg">
+                        <div class="title">Make an Appointment</div>
+                        <div class="row p-4 p-md-5">
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="tel" placeholder="Your Phone">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="text" placeholder="Doctor">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="email" placeholder="Your E-mail">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="text" placeholder="Speciality">
+                            </div>
+                            <div class="col-md-6 p-1">
+                                <input class="form-control" type="date" placeholder="Date">
+                            </div>
 
+                            <div class="col-12 p-1 mt-2">
+                                <button class="buttonstyle secondary">Make an appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function openSidenav() {
+            $(".sidenav-bg").css("display", "block");
+            $(".sidenav").css("transform", "translate(0,-50%)");
+        }
+        function closeSidenav() {
+            $(".sidenav-bg").css("display", "none");
+            $(".sidenav").css("transform", "translate(120%,-50%)");
+        }
+
+        $(document).ready(function () {
+            new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                pagination: { el: '.swiper-pagination' },
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplay: false,
+                navigation: {
+                    nextEl: ".swiper-next",
+                    prevEl: ".swiper-prev",
+                },
+                speed: 2000,
+                breakpoints: {
+                    1400: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+
+                    },
+                },
+            });
+        });
+
+    </script>
 </body>
 
 </html>

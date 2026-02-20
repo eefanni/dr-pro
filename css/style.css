@@ -65,12 +65,14 @@ body {
     line-height: 0.75;
     color: #616161;
 }
+
 .light {
     font-size: 18px;
     font-weight: 600;
     color: rgba(97, 97, 97, 0.37);
     margin-bottom: 10px;
 }
+
 h2 {
     font-size: 45px;
     color: rgb(63, 63, 63);
@@ -87,8 +89,8 @@ h2 {
     width: 100%;
     padding: 0px 50px;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 100;
 }
 
@@ -205,24 +207,28 @@ h2 {
     margin: 0px 7px;
     transition: .1s;
 }
+
 .sidenav .icons i:hover {
     background-color: #3f3f3f;
     color: white;
     cursor: pointer;
     transition: .1s;
 }
-.sidenav .navigations a{
+
+.sidenav .navigations a {
     font-size: 25px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.72);
     transition: .1s;
     text-decoration: none;
 }
+
 .sidenav .navigations a:hover {
     cursor: pointer;
     color: #1f7a73;
     transition: .1s;
 }
+
 .sidenav .darken:hover {
     cursor: pointer;
     color: #1f7a73;
@@ -238,6 +244,7 @@ h2 {
     margin-bottom: 80px;
 
 }
+
 .banner-section .bannertext {
     position: absolute;
     top: 0;
@@ -249,6 +256,7 @@ h2 {
     align-items: center;
 
 }
+
 .banner-section .image {
     height: 70vh;
     min-height: 550px;
@@ -259,6 +267,7 @@ h2 {
         filter: brightness(0.6);
     }
 }
+
 .banner-section .title {
     font-size: 50px;
     color: #3f3f3f;
@@ -266,6 +275,7 @@ h2 {
         color: white;
     }
 }
+
 .bannertext .textcolormain {
     font-size: 25px;
     font-weight: 600;
@@ -273,7 +283,8 @@ h2 {
         color: #a9f4e8;
     }
 }
-.banner-section .description{
+
+.banner-section .description {
     font-size: 15px;
     color: #616161;
     margin-bottom: 50px;
@@ -286,6 +297,7 @@ h2 {
         width: 100%;
     }
 }
+
 .banner-section .appointment {
     color: #56cac1;
     background-color: transparent;
@@ -300,6 +312,7 @@ h2 {
         width: 100%;
     }
 }
+
 .banner-section .appointment:hover {
     color: white;
     background-color: #56cac1;
@@ -320,15 +333,18 @@ h2 {
     max-width: 1200px;
     margin: auto;
 }
+
 .welcome-section .introduction {
     padding-right: 60px;
 }
+
 .welcome-section .introduction .description {
     font-size: 15px;
     color: rgba(63, 63, 63, 0.83);
     line-height: 1.75;
     margin-bottom: 60px;
 }
+
 .welcome-section .content {
     display: block;
 
@@ -336,17 +352,20 @@ h2 {
         display: flex;
     }
 }
+
 .welcome-section .introduction .colored {
     color: #56cac1;
     font-weight: 800;
     font-size: 30px;
 }
+
 .welcome-section .introduction .text {
     font-size: 19px;
     font-weight: 600;
     color: rgb(63, 63, 63);
     margin-bottom: 30px;
 }
+
 .welcome-section .appointment .title {
     background-color: #56cac1;
     color: white;
@@ -357,27 +376,32 @@ h2 {
     font-size: 23px;
     text-align: center;
 }
+
 .welcome-section input {
     height: 50px;
     background-color: transparent;
     border: 2px solid rgba(170, 170, 170, 0.27);
     border-radius: 0;
 }
+
 .welcome-section input:hover {
     border: 2px solid #56cac1;
     transition: .2s;
 }
+
 .welcome-section input::placeholder {
     color: rgba(119, 119, 119, 0.72);
     font-size: 15px;
 
 }
+
 .welcome-section input:focus {
     background-color: transparent;
     outline: 0;
     box-shadow: unset;
     border: 2px solid #56cac1;
 }
+
 .welcome-section button {
     width: 100%;
     @media (max-width: 360px){
@@ -385,6 +409,9 @@ h2 {
     }
 }
 
+<<<<<<< HEAD
+.section-subtitle {
+=======
 /* --- features-section ---------------------------------------------------------------------------------------------------------- */
 
 .features-section{
@@ -427,13 +454,11 @@ h2 {
     width: 30px;
 }
 .features-section .points-title{
+>>>>>>> c4ea73dae71819e59e1f92852106e156aba5997b
     font-size: 18px;
     font-weight: 600;
-}
-.features-section .points-description{
-    font-size: 15px;
-    color: rgba(63, 63, 63, 0.83);
-    line-height: 1.75;
+    color: rgba(97, 97, 97, 0.37);
+    margin-bottom: 10px;
 }
 .features-section .points div{
     margin-bottom: 10px;
@@ -441,19 +466,120 @@ h2 {
 
 /* --- appointment-section ------------------------------------------------------------------------- */
 
-.appointment-section{
-    background-color: #fb546c;
-    color: white;
+.h2-aboutus {
+    font-size: 45px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 40px;
 }
-.appointment-section .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    padding: 40px 60px;
-    @media (max-width: 1000px) {
-        display: block;
+
+.intro-aboutus {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 500;
+    color: #828282;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+.features-section {
+    background-color: #edf0f5;
+}
+
+<<<<<<< HEAD .features-section .image-main {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    =======.features-section .image-main {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        >>>>>>>7ceb368cf20c53819a39ed9638fec2146e802047
     }
+<<<<<<< HEAD
+
+    .features-section .order-1 {
+        order: 1;
+    }
+
+    .features-section .order-2 {
+        order: 2;
+    }
+
+    .features-section .description {
+        font-size: 15px;
+        color: rgba(63, 63, 63, 0.83);
+        line-height: 1.75;
+        margin-bottom: 60px;
+    }
+
+    .features-section .points .image {
+        position: relative;
+        height: 65px;
+        width: 65px;
+        min-height: 65px;
+        min-width: 65px;
+        margin-right: 20px;
+        background-color: #6ad9d0;
+        border-radius: 100%;
+    }
+
+    .features-section .points img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 30px;
+        width: 30px;
+    }
+
+    .features-section .points-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .features-section .points-description {
+        font-size: 15px;
+        color: rgba(63, 63, 63, 0.83);
+        line-height: 1.75;
+    }
+
+    .appointment-section {
+        background-color: #fb546c;
+        color: white;
+    }
+
+    .appointment-section .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        padding: 40px 60px;
+
+        @media (max-width: 1000px) {
+            display: block;
+        }
+    }
+
+    .appointment-section .title {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .appointment-section .telephonenumber {
+        font-size: 27px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #ec475f;
+        padding: 15px;
+        max-width: 300px;
+    }
+=======
 }
 .appointment-section .title{
     font-size: 35px;
@@ -506,3 +632,4 @@ h2 {
     color: #7c7c7c;
     font-size: 16px;
 }
+>>>>>>> c4ea73dae71819e59e1f92852106e156aba5997b
