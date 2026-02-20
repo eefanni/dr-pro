@@ -243,7 +243,7 @@
 /* --- services-section ---------------------------------------------------------------------------------------- */
 
 .services-section{
-    padding-top: 60px;
+    padding: 70px 0px;
     text-align: center;
 }
 .services-section .image{
@@ -276,4 +276,137 @@
 .services-section .description{
     color: #7c7c7c;
     font-size: 16px;
+}
+
+/* --- discount-section -------------------------------------------------------------------- */
+
+.discount-section{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("https://preview.colorlib.com/theme/drpro/images/extra.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.discount-section .content{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+.discount-section .inner{
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    @media (max-width: 500px){
+        padding: 20px;
+    }
+}
+.discount-section .textcolormain{
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 800;
+    margin-right: 5px;
+}
+.discount-section .title{
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    @media (max-width: 700px){
+        font-size: 50px;
+    }
+    @media (max-width: 500px){
+        margin-top: 15px;
+        font-size: 40px;
+    }
+}
+.discount-section .buttonstyle{
+    margin-top: 30px;
+    @media (max-width: 500px){
+        margin-top: 15px;
+    }
+}
+
+/* --- subscribe-section -------------------------------------------------------------------------------- */
+
+
+.subscribe-section img{
+    width: 100%;
+    min-height: 250px;
+    max-height: 300px;
+    object-fit: cover;
+}
+.subscribe-section .content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+}
+.subscribe-section h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 30px 0px;
+    text-align: center;
+    @media (max-width: 660px){
+        font-size: 25px;
+        margin-top: 20px;
+    }
+}
+.subscribe-section button{
+    translate: -15%;
+    background-color: #fd556d;
+    color: white;
+    border: 3px solid #fd556d;
+    height: inherit;
+    transition: .2s;
+    @media (max-width: 600px){
+        translate: 0%;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.subscribe-section button:hover{
+    color: #7e2a33;
+    transition: .2s;
+}
+.subscribe-section input{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+    padding-left: 25px;
+}
+.subscribe-section input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.subscribe-section input:focus {
+    background-color: transparent;
+    outline: 0;
+    box-shadow: unset;
+    border: 2px solid white;
+}
+.subscribe-section .inner{
+    width: 100%;
+    display: flex;
+    @media (max-width: 600px){
+        display: block;
+    }
+}
+
+/* --- footer-section ------------------------------------------------------------------------- */
+
+.footer-section{
+
 }
