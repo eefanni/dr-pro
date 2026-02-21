@@ -106,10 +106,13 @@ h2 {
 
 .navbar-section .navigations {
     display: flex;
-
     @media (max-width: 1000px) {
         display: none;
     }
+}
+
+.navbar-section .navigations .active{
+    color: #56cac1!important;
 }
 
 .navbar-section .icons {
@@ -363,4 +366,33 @@ h2 {
     @media (max-width: 990px){
         margin-bottom: 10px;
     }
+}
+
+
+/* --- banner-section --------------------------------------------------------------------------------------------------- */
+
+.banner-section-side{
+    height: 600px;
+
+    background-position: 60% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.banner-section-side img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}
+.banner-section-side .content{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    margin-left: 50px;
+}
+.banner-section-side .wave{
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
 }

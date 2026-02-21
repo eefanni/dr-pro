@@ -1,0 +1,134 @@
+.banner-section-side{
+    background: url("https://preview.colorlib.com/theme/drpro/images/services.jpg");
+}
+/* --- services-section ----------------------------------------------------------------------------------- */
+
+.services-section{
+    padding: 70px 0px;
+    text-align: center;
+    background-color: white;
+}
+.services-section .image{
+    position: relative;
+    height: 65px;
+    width: 65px;
+    min-height: 65px;
+    min-width: 65px;
+    background-color: #6ad9d0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.services-section img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+}
+.services-section .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #404040;
+    margin: 20px 0px;
+}
+.services-section .description{
+    color: #7c7c7c;
+    font-size: 16px;
+}
+
+/* --- before-and-after-section ------------------------------------------------------------------------- */
+
+.before-and-after-section{
+    background-color: #e8f0f3;
+    text-align: center;
+    padding: 50px 0px;
+    @media (max-width: 500px){
+        padding: 30px 0px;
+    }
+}
+.before-and-after-section .title{
+    @media (max-width: 600px){
+        font-size: 35px!important;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 450px){
+        font-size: 25px!important;
+        margin-bottom: 20px;
+    }
+}
+.before-and-after-section img{
+    max-height: 500px;
+    object-fit: cover;
+    max-width: 1200px;
+}
+.before-and-after-section .image{
+    max-height: 500px;
+    max-width: 1200px;
+}
+.before-and-after-section .description{
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 0px;
+    @media (max-width: 450px) {
+        padding: 15px 0px;
+    }
+}
+.before-and-after-section .background {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: rgba(64, 64, 64, 0.4);
+    height: 100%;
+    width: 100%;
+    max-height: inherit;
+    max-width: inherit;
+    z-index: 15;
+}
+
+
+/* --- prices-section ------------------------------------------------------------------------- */
+
+.prices-section{
+    padding: 50px 0px;
+}
+
+.prices-section .item{
+    background-color: #e8f0f3;
+    border-left: 2px solid #56cac1;
+    padding: 35px;
+    margin: 20px 10px;
+
+}
+.prices-section .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    @media (max-width: 450px){
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+.prices-section .description{
+    font-size: 14px;
+    font-weight: 500;
+    color: #828282;
+}
+.prices-section .price{
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    border-radius: 20px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 35px;
+    background-color: #fd556d;
+    color: white;
+    border: 2px solid #fd556d;
+    transition: .2s;
+}
+
