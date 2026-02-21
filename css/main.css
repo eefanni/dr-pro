@@ -229,3 +229,69 @@ h2 {
     color: #1f7a73;
     transition: .1s;
 }
+
+/* --- footer-section ------------------------------------------------------------------------- */
+
+.footer-section{
+    background-color: #26292d;
+    color: rgb(165, 165, 165);
+    padding: 50px 50px;
+    font-size: 14px;
+    line-height: 2;
+    @media (max-width: 1200px){
+        padding: 50px 20px;
+    }
+    @media (max-width: 991px){
+        padding: 30px 30px;
+    }
+    @media (max-width: 470px){
+        padding: 10px 10px;
+    }
+}
+.footer-section .title{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.footer-section .openinghours{
+    padding: 25px;
+    border: 1px solid rgb(165, 165, 165);
+    @media (max-width: 990px){
+        border: none;
+        padding: 0;
+        max-width: 300px;
+    }
+}
+.footer-section .colored{
+    color: #56cac1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-section .logo {
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.footer-section .logo .subtext {
+    color: #8f8f8f;
+}
+.footer-section .locations{
+    padding-left: 20px;
+    @media (max-width: 990px){
+        padding-left: 10px;
+    }
+}
+.footer-section .contact{
+    margin-top: 25px;
+}
+.footer-section .locations .title{
+    margin-top: 25px;
+}
+.footer-section .col-12{
+    margin-bottom: 20px;
+    @media (max-width: 990px){
+        margin-bottom: 10px;
+    }
+}
